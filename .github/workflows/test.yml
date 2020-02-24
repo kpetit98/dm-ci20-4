@@ -3,15 +3,6 @@ name: PHP Composer Test
 on: push
 
 jobs:
-  integration:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-    - name: Install dependencies
-      run: composer install --no-progress --no-suggest
-    - name: Run test intergration
-      run: bin/phpunit tests/Integration
-      
   functionnal:
     runs-on: ubuntu-latest
     steps:
