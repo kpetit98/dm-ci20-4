@@ -19,4 +19,4 @@ jobs:
       - name:
          Run PHP-CS Fixer with Symfony Rules Dry Run 
         run:
-          php-cs-fixer fix . --dry-run --rules=@Symfony
+          php-cs-fixer fix . --rules=@Symfony
