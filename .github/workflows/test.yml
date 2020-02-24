@@ -2,7 +2,7 @@ name: PHP Composer Test
 
 on: 
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "*/1 * * * *"
 
 jobs:
   integration:
