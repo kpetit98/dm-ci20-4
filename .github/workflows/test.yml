@@ -1,11 +1,8 @@
 name: PHP Composer Test
 
 on:
-  push:
-    branches:
-      - master
   schedule:
-    - cron:  '*/1 * * * *'
+    - cron:  '*/15 * * * *'
 
 jobs:
   integration:
