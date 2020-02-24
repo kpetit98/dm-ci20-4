@@ -8,7 +8,7 @@ RUN composer install --ignore-platform-reqs --no-ansi --no-interaction --prefer-
 FROM php:7.4.2-fpm-alpine3.11 as php
 
 ENV APP_ENV=prod
-RUN 
+
 RUN apk update \
     && apk --no-cache add acl=2.2.53-r0 \
     && rm -rf /var/cache/apk/*
