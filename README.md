@@ -4,7 +4,7 @@ A Symfony project for implemented Github Actions
 
 ## Requirements
 
-- [x] Php 7.2
+- [x] PHP 7.2
 - [x] Docker
 - [x] Make
 
