@@ -10,3 +10,13 @@ jobs:
          Run hadolint on Dockerfile
         run:
           hadolint ./Dockerfile
+          
+  php-cs-fixer:
+    runs-on: ubuntu-latest
+    container: herloct/php-cs-fixer:2.3.2
+    steps:
+      - uses: actions/checkout@v2
+      - name:
+         Run PHP-CS Fixer with Symfony Rules Dry Run 
+        run:
+          php php-cs-fixer.phar fix . --dry-run --rules=@Symfony
