@@ -20,3 +20,12 @@ jobs:
          Run PHP-CS Fixer with Symfony Rules Dry Run 
         run:
           php-cs-fixer fix . --rules=@Symfony
+          
+  security-checker:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install dependencies
+      run: composer install --no-progress --no-suggest
+    - name: Run security checker
+      run: php security-checker security:check ./composer.lock
