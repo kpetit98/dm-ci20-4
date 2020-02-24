@@ -1,0 +1,12 @@
+name: Code Quality
+on: [push]
+jobs:
+  hadolint:
+    runs-on: ubuntu-latest
+    container: hadolint/hadolint:latest
+    steps:
+      - uses: actions/checkout@v2
+      - name:
+         Run hadolint on Dockerfile
+        run:
+          hadolint ./Dockerfile
