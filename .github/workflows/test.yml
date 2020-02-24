@@ -1,8 +1,6 @@
 name: PHP Composer Test
 
-on:
-  schedule:
-    - cron:  '*/15 * * * *'
+on: push
 
 jobs:
   integration:
