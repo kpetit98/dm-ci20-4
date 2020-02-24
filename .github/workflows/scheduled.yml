@@ -1,4 +1,4 @@
-name: PHP Composer Test
+name: Schedule Integration Test
 
 on:
   schedule:
